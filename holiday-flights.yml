@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  config:
+    activate:
+      on-profile: default
+  application:
+    name: holiday-flights
+  datasource:
+    url: jdbc:mysql://${holiday-flights-db:localhost}:3306/holiday-flights-db
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate.hbm2ddl.import_files: data-mysql.sql

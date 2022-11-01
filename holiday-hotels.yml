@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  config:
+    activate:
+      on-profile: default
+  application:
+    name: holiday-hotels
+  datasource:
+    url: jdbc:mysql://${holiday-hotels-db:localhost}:3306/holiday-hotels-db
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate.hbm2ddl.import_files: data-mysql.sql

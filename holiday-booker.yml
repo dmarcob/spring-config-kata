@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+spring:
+  config:
+    activate:
+      on-profile: default
+  application:
+    name: holiday-booker
+  datasource:
+    url: jdbc:mysql://${holiday-booker-db:localhost}:3306/holiday-booker-db
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+app:
+  environment:
+    holiday-flights-host: ${holiday-flights-host:localhost}
+    holiday-hotels-host: ${holiday-hotels-host:localhost}

@@ -5,8 +5,6 @@ spring:
   config:
     activate:
       on-profile: default
-  application:
-    name: holiday-flights
   datasource:
     url: jdbc:mysql://${holiday-flights-db:localhost}:3306/holiday-flights-db
     username: root

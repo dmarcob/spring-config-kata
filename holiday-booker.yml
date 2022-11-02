@@ -12,8 +12,3 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create-drop
-
-app:
-  environment:
-    holiday-flights-host: ${holiday-flights-host:localhost}
-    holiday-hotels-host: ${holiday-hotels-host:localhost}

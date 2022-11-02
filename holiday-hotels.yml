@@ -6,7 +6,7 @@ spring:
     activate:
       on-profile: default
   datasource:
-    url: jdbc:mysql://${holiday-hotels-db:localhost}:3307/holiday-hotels-db
+    url: jdbc:mysql://${holiday-hotels-db:localhost}:3306/holiday-hotels-db
     username: root
     password: root
   jpa:

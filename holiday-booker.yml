@@ -6,7 +6,7 @@ spring:
     activate:
       on-profile: default
   datasource:
-    url: jdbc:mysql://${holiday-booker-db:localhost}:3308/holiday-booker-db
+    url: jdbc:mysql://${holiday-booker-db:localhost}:3306/holiday-booker-db
     username: root
     password: root
   jpa:
